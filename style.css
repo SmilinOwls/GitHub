@@ -1,0 +1,47 @@
+ul
+{
+    width: 150px;
+}
+
+ul li
+{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 30px;
+    list-style: none;
+    font-style: inherit;
+    padding: 0px 10px;
+    background-color: burlywood;
+    border: solid 1.5px #d0d0d0;
+    border-bottom: none;
+    position: relative;
+}
+
+ul li:last-child
+{
+    border-bottom: solid 1.5px #d0d0d0;
+}
+
+ul li ul
+{
+    padding: 0 28px;
+    top: -1px;
+    left: 120px;
+    position: absolute;
+    display: none;
+}
+
+ul li:hover ul
+{
+    display: block;
+}
+
+.title::before
+{
+    content: "Welcome";
+    border: solid 1.5px red;
+    background: lightcyan;
+    padding: 5px;
+    cursor: text;
+    overflow: hidden;
+}
+
